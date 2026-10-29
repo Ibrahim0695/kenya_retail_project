@@ -1,6 +1,6 @@
 .env
 .env.*
-!.env.docker.example
+
 .venv
 venv
 __pycache__
