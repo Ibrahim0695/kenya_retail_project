@@ -1,0 +1,6 @@
+pandas>=2.1.4,<3
+requests>=2.31
+openpyxl>=3.1
+pdfplumber>=0.11
+truststore>=0.10
+confluent-kafka>=2.6

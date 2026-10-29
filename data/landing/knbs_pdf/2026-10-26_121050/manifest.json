@@ -1,0 +1,17 @@
+{
+  "source": "knbs_pdf",
+  "saved_at": "2026-10-26_121050",
+  "date_from": "2026-09",
+  "date_to": "2026-09",
+  "rows": 14,
+  "columns": [
+    "series_id",
+    "series_name",
+    "period",
+    "weight_pct",
+    "month_on_month_pct",
+    "yoy_inflation_pct",
+    "source"
+  ],
+  "file": "knbs_cpi_inflation.csv"
+}

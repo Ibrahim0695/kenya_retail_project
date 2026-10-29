@@ -1,0 +1,14 @@
+{
+  "source": "operational",
+  "saved_at": "2026-10-25_234834",
+  "date_from": "2025-04-01",
+  "date_to": "2026-10-25",
+  "tables": {
+    "store_master.csv": 6,
+    "product_master.csv": 12,
+    "supplier_master.csv": 5,
+    "pos_transactions.csv": 22399,
+    "pos_transaction_lines.csv": 56147,
+    "inventory_movements.csv": 33069
+  }
+}

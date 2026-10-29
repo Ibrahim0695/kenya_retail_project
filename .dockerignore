@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.docker.example
+.venv
+venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.git
+.idea
+.vscode
+data
+*.log

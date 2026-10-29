@@ -1,0 +1,159 @@
+services:
+  kafka:
+    image: apache/kafka:4.0.0
+    hostname: kafka
+    ports:
+      - "127.0.0.1:29092:29092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093,HOST://:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_NUM_PARTITIONS: 3
+      KAFKA_LOG_DIRS: /tmp/kraft-combined-logs
+    healthcheck:
+      test: ["CMD", "bash", "-ec", ":</dev/tcp/localhost/9092"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  airflow-db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: ${AIRFLOW_DB_PASSWORD:?Set AIRFLOW_DB_PASSWORD in .env.docker}
+    volumes:
+      - airflow-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  airflow-init:
+    image: kenya-retail-airflow:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: &airflow-environment
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__PARALLELISM: "2"
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY:?Set AIRFLOW_FERNET_KEY in .env.docker}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY:?Set AIRFLOW_WEBSERVER_SECRET_KEY in .env.docker}
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:${AIRFLOW_DB_PASSWORD:?Set AIRFLOW_DB_PASSWORD in .env.docker}@airflow-db:5432/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+      AIRFLOW_ADMIN_USER: ${AIRFLOW_ADMIN_USER:?Set AIRFLOW_ADMIN_USER in .env.docker}
+      AIRFLOW_ADMIN_PASSWORD: ${AIRFLOW_ADMIN_PASSWORD:?Set AIRFLOW_ADMIN_PASSWORD in .env.docker}
+      DATABASE_HOST: host.docker.internal
+      DATABASE_PORT: "5432"
+      JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+    volumes:
+      - ./data:/opt/retail/data
+      - ./sources:/opt/retail/sources
+      - ./spark:/opt/retail/spark
+      - ./dags:/opt/retail/dags
+      - airflow-logs:/opt/airflow/logs
+    env_file:
+      - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      airflow-db:
+        condition: service_healthy
+    command:
+      - bash
+      - -c
+      - |
+        set -e
+        airflow db migrate
+        if ! airflow users list --output json | python -c \
+          'import json, sys; sys.exit(0 if any(user["username"] == sys.argv[1] for user in json.load(sys.stdin)) else 1)' \
+          "$${AIRFLOW_ADMIN_USER}"; then
+          airflow users create \
+            --role Admin \
+            --username "$${AIRFLOW_ADMIN_USER}" \
+            --password "$${AIRFLOW_ADMIN_PASSWORD}" \
+            --firstname Local \
+            --lastname Admin \
+            --email admin@localhost
+        fi
+        airflow dags unpause kenya_retail_daily_pipeline
+    restart: "no"
+
+  airflow-scheduler:
+    image: kenya-retail-airflow:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: *airflow-environment
+    volumes:
+      - ./data:/opt/retail/data
+      - ./sources:/opt/retail/sources
+      - ./spark:/opt/retail/spark
+      - ./dags:/opt/retail/dags
+      - airflow-logs:/opt/airflow/logs
+    env_file:
+      - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      kafka:
+        condition: service_healthy
+    command: scheduler
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:8974/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  airflow-webserver:
+    image: kenya-retail-airflow:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      <<: *airflow-environment
+      AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: "600"
+      AIRFLOW__WEBSERVER__WORKERS: "2"
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./data:/opt/retail/data
+      - ./sources:/opt/retail/sources
+      - ./dags:/opt/retail/dags
+      - airflow-logs:/opt/airflow/logs
+    env_file:
+      - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      airflow-scheduler:
+        condition: service_healthy
+    command: webserver
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  airflow-db-data:
+  airflow-logs:

@@ -1,0 +1,22 @@
+{
+  "source": "kamis",
+  "saved_at": "2026-10-29_064850",
+  "date_from": "2026-10-27",
+  "date_to": "2026-10-28",
+  "rows": 692,
+  "columns": [
+    "market",
+    "commodity",
+    "classification",
+    "grade",
+    "sex",
+    "wholesale_price",
+    "retail_price",
+    "unit",
+    "supply_volume",
+    "county",
+    "survey_date",
+    "source"
+  ],
+  "file": "kamis_prices.csv"
+}

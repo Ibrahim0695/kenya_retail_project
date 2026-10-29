@@ -1,0 +1,622 @@
+market,commodity,classification,grade,sex,wholesale_price,retail_price,unit,supply_volume,county,survey_date,source
+Vanga,Octopus (Pweza),Fresh,-,-,500.0,700.0,Kg,134.0,Kwale,2026-10-24,KAMIS
+Vanga,Scavengers (Changu/Tangu),Fresh,-,-,220.0,300.0,Kg,226.0,Kwale,2026-10-24,KAMIS
+Vanga,Rabbitfish (Tafi/Tasi),Fresh,-,-,250.0,400.0,Kg,129.0,Kwale,2026-10-24,KAMIS
+Vanga,Parrotfishes(Pono),Fresh,-,-,220.0,280.0,Kg,120.0,Kwale,2026-10-24,KAMIS
+Vanga,Halfbeaks,Fresh,-,-,220.0,300.0,Kg,208.0,Kwale,2026-10-24,KAMIS
+Vanga,Anchovies,Fresh,-,-,125.0,160.0,Kg,700.0,Kwale,2026-10-24,KAMIS
+Makutano Kirinyaga,Capsicums,-,-,-,60.0,70.0,Kg,,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Chillies,-,-,-,60.0,80.0,Kg,,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Dry Onions,-,-,-,68.0,80.0,Kg,,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Fresh Peas,On pods,-,-,85.0,100.0,Kg,,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Kales/Sukuma Wiki,-,-,-,28.0,40.0,Kg,,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Pumpkin,-,-,-,45.0,60.0,Kg,2800.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Spinach,-,-,-,22.0,30.0,Kg,1150.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Spring Onions,-,-,-,120.0,140.0,Kg,2200.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Jute Plant (Murenda),-,-,-,33.0,40.0,Kg,650.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Pumpkin Leaves,-,-,-,45.0,55.0,Kg,320.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Cowpea leaves (Kunde),-,-,-,23.0,30.0,Kg,2250.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Black nightshade (Managu/ Osuga),-,-,-,50.0,60.0,Kg,2800.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Amaranthus (Terere),-,-,-,20.0,30.0,Kg,950.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Sweet potatoes,-,-,-,70.0,100.0,Kg,3800.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Cassava Fresh,-,-,-,60.0,80.0,Kg,1700.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Arrow Root,-,-,-,90.0,140.0,Kg,1180.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Meat Beef,-,-,-,500.0,700.0,Kg,2100.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Eggs,Exotic/Grade,-,-,400.0,450.0,Tray(30),380.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Cow Milk(Processd),-,-,-,126.0,140.0,Lt,480.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Chicken,Indigenous,-,Female,850.0,,,750.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Chicken,Indigenous,-,Male,1000.0,,,450.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Chicken,Improved Kienyeji,-,Female,,,,950.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Chicken,Improved Kienyeji,-,Male,1250.0,,,450.0,Kirinyaga,2026-10-24,KAMIS
+Makutano Kirinyaga,Chicken,Broiler,-,Male,500.0,,,260.0,Kirinyaga,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,French beans,-,-,-,100.0,120.0,Kg,450.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Cucumber,-,-,-,70.0,100.0,Kg,350.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Dry Onions,-,-,-,50.0,80.0,Kg,400.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Tomatoes,-,-,-,40.0,150.0,Kg,450.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Sweet potatoes,-,-,-,100.0,100.0,Kg,1000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Apples,-,-,-,40.0,80.0,Kg,300.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Cassava Fresh,-,-,-,100.0,100.0,Kg,1000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Water Melon,-,-,-,35.0,120.0,Kg,5000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Omena,Dried,-,-,500.0,600.0,Kg,3.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Pineapples,-,-,-,140.0,170.0,Kg,300.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Oranges,-,-,-,22.22,120.0,Kg,1000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Chicken,Layers,-,Female,600.0,,,,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Chicken,Indigenous,-,Female,600.0,,,15.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Avocado,Local,-,-,40.0,60.0,Kg,400.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Dry Peas,-,-,-,150.0,175.0,Kg,300.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Chicken,Improved Kienyeji,-,Female,600.0,,,18.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Beans Rosecoco,-,-,-,150.0,175.0,Kg,400.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Chicken,Improved Kienyeji,-,Male,1000.0,,,20.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Beans Red Haricot (Wairimu),-,-,-,130.0,150.0,Kg,350.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Lentils,-,-,-,88.89,300.0,Kg,250.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Spider flower (Saga),-,-,-,100.0,120.0,Kg,500.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Njugu Mawe,-,-,-,200.0,600.0,Kg,300.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Black nightshade (Managu/ Osuga),-,-,-,100.0,120.0,Kg,500.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Green Grams,Local-Special,-,-,150.0,175.0,Kg,200.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Wheat,-,-,-,50.0,90.0,Kg,3000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Red Sorghum,-,-,-,150.0,175.0,Kg,2000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Beans (Mwitemania),-,-,-,175.0,225.0,Kg,250.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Dry Maize,White Maize,-,-,40.0,45.0,Kg,50000.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Beans Rosecoco (Nyayo),-,-,-,150.0,175.0,Kg,200.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Beans (Mwezi Moja),-,-,-,175.0,200.0,Kg,250.0,Uasin-Gishu,2026-10-24,KAMIS
+Cheptiret - Uasin Gishu,Beans (Yellow-Green),-,-,-,200.0,225.0,Kg,300.0,Uasin-Gishu,2026-10-24,KAMIS
+Taveta Retail Market,Ground Nuts,Small Red,-,-,190.0,200.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,White Irish Potatoes,-,-,-,50.0,70.0,Kg,950.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Sweet potatoes,-,-,-,80.0,100.0,Kg,500.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Cassava Fresh,-,-,-,80.0,100.0,Kg,320.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Arrow Root,-,-,-,80.0,100.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Water Melon,-,-,-,60.0,80.0,Kg,800.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Oranges,-,-,-,30.0,60.0,Kg,800.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Lemons,-,-,-,70.0,25.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,White Sorghum,-,-,-,90.0,110.0,kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Red Sorghum,-,-,-,120.0,130.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Dry Maize,Mixed-Traditional ,-,-,35.0,40.0,Kg,9000.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Beans Rosecoco (Nyayo),-,-,-,120.0,140.0,Kg,1300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Spider flower (Saga),-,-,-,70.0,100.0,Kg,50.0,Taita-Taveta,2026-10-24,KAMIS
+Mukuyu Market,Sweet potatoes,-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Taveta Retail Market,Black nightshade (Managu/ Osuga),-,-,-,50.0,80.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Amaranthus (Terere),-,-,-,50.0,80.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Mukuyu Market,Arrow Root,-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Taveta Retail Market,Tomatoes,-,-,-,40.0,50.0,Kg,800.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Spinach,-,-,-,50.0,80.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Pumpkin,-,-,-,400.0,500.0,Kg,50.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Okra (Lady's fingers or Gumbo),-,-,-,50.0,100.0,Kg,250.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Kales/Sukuma Wiki,-,-,-,50.0,80.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Green Maize,-,-,-,50.0,100.0,Kg,250.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Ginger,-,-,-,80.0,100.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Garlic,-,-,-,300.0,400.0,Kg,150.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Egg plant (Brinjals),-,-,-,100.0,150.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Dry Onions,-,-,-,70.0,80.0,Kg,1000.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Cucumber,-,-,-,80.0,100.0,Kg,100.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Chillies,-,-,-,100.0,150.0,Kg,80.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Carrots,-,-,-,80.0,100.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Capsicums,-,-,-,80.0,100.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Cabbages,-,-,-,50.0,70.0,Kg,500.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Lentils,-,-,-,300.0,350.0,Kg,200.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Ground Nuts,Large Brown,-,-,220.0,240.0,Kg,300.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Green Grams,Hybrid/ polished,-,-,115.0,130.0,Kg,900.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Dolichos lablab (Njahi),-,-,-,100.0,120.0,Kg,150.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Cowpeas,-,-,-,90.0,100.0,Kg,900.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Beans (Yellow-Green),-,-,-,130.0,140.0,Kg,900.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Beans (Mwitemania),-,-,-,120.0,130.0,Kg,900.0,Taita-Taveta,2026-10-24,KAMIS
+Taveta Retail Market,Coconut,-,-,-,200.0,350.0,Kg,200.0,Taita-Taveta,2026-10-24,KAMIS
+Mukuyu Market,Pork,-,-,-,,750.0,Kg,,Muranga,2026-10-24,KAMIS
+Mukuyu Market,Honey,Processed,-,-,,900.0,Kg,,Muranga,2026-10-24,KAMIS
+Mukuyu Market,Eggs,Exotic/Grade,-,-,,430.0,Tray(30),,Muranga,2026-10-24,KAMIS
+Mukuyu Market,Dry Onions,-,-,-,,130.0,Kg,,Muranga,2026-10-24,KAMIS
+Mukuyu Market,Tomatoes,-,-,-,,30.0,Kg,,Muranga,2026-10-24,KAMIS
+Samburu,Dry Onions,-,-,-,62.5,140.0,Kg,6000.0,Kwale,2026-10-24,KAMIS
+Samburu,Okra (Lady's fingers or Gumbo),-,-,-,30.0,60.0,Kg,500.0,Kwale,2026-10-24,KAMIS
+Samburu,Tomatoes,-,-,-,75.0,40.0,Kg,12000.0,Kwale,2026-10-24,KAMIS
+Samburu,Cabbages,-,-,-,30.0,240.0,Kg,4000.0,Kwale,2026-10-24,KAMIS
+Samburu,Banana (Cooking),-,-,-,75.0,40.0,Kg,200.0,Kwale,2026-10-24,KAMIS
+Samburu,Beans (Mwitemania),-,-,-,100.0,130.0,Kg,1500.0,Kwale,2026-10-24,KAMIS
+Samburu,Beans (Yellow-Green),-,-,-,120.0,150.0,Kg,500.0,Kwale,2026-10-24,KAMIS
+Samburu,Green Grams,Hybrid/ polished,-,-,130.0,170.0,Kg,1000.0,Kwale,2026-10-24,KAMIS
+Samburu,Coconut,-,-,-,8.0,100.0,Kg,1500.0,Kwale,2026-10-24,KAMIS
+Kabati - Muranga,Paddy Rice,Pishori,-,-,,185.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Paddy Rice,IRR,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Dry Maize,White Maize,-,-,,70.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Dolichos lablab (Njahi),-,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Green Grams,Makueni,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Lentils,-,-,-,,250.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Beans Rosecoco,-,-,-,,150.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Beans Red Haricot (Wairimu),-,-,-,,150.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Beans (Yellow-Green),-,-,-,,200.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Beans (Canadian wonder),-,-,-,,150.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Meat Indiginous Chicken,-,-,-,,900.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Meat Broiler,-,-,-,,600.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Pork,-,-,-,,800.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Eggs,Exotic/Grade,-,-,,430.0,Tray(30),,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Cow Milk(Processd),-,-,-,,80.0,Lt,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Yam,-,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Sweet potatoes,-,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Cassava Fresh,-,-,-,,40.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Arrow Root,-,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Water Melon,-,-,-,,55.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Tree tomato,-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Thorn melon,-,-,-,,60.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Tangerine (Sandara),-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Pineapples,-,-,-,,80.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Passion Fruits,-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Oranges,-,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Lemons,-,-,-,,80.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Grapes,White,-,-,,600.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Grapes,Red,-,-,,600.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Avocado,Local,-,-,,150.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Apples,-,-,-,,200.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Black nightshade (Managu/ Osuga),-,-,-,,60.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Amaranthus (Terere),-,-,-,,50.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Tomatoes,-,-,-,,50.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Spinach,-,-,-,,70.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Pumpkin,-,-,-,,80.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Kales/Sukuma Wiki,-,-,-,,50.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Green Maize,-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Ginger,-,-,-,,320.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Garlic,-,-,-,,400.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Fresh Peas,On pods,-,-,,250.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,French beans,-,-,-,,70.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Coriander (Dhania),-,-,-,,60.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Chillies,-,-,-,,120.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Carrots,-,-,-,,70.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Capsicums,-,-,-,,80.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Cabbages,-,-,-,,60.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Butternuts,-,-,-,,100.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Banana (Plantain),-,-,-,,50.0,Kg,,Muranga,2026-10-24,KAMIS
+Kabati - Muranga,Banana (Cooking),-,-,-,,50.0,Kg,,Muranga,2026-10-24,KAMIS
+Vanga,Octopus (Pweza),Fresh,-,-,500.0,700.0,Kg,152.0,Kwale,2026-10-25,KAMIS
+Vanga,Snappers(Tazanda),Fresh,-,-,250.0,400.0,Kg,47.0,Kwale,2026-10-25,KAMIS
+Vanga,Mixed Pelagics,Fresh,-,-,220.0,280.0,Kg,153.0,Kwale,2026-10-25,KAMIS
+Vanga,Scavengers (Changu/Tangu),Fresh,-,-,250.0,400.0,Kg,137.0,Kwale,2026-10-25,KAMIS
+Vanga,Rabbitfish (Tafi/Tasi),Fresh,-,-,240.0,300.0,Kg,116.0,Kwale,2026-10-25,KAMIS
+Vanga,Parrotfishes(Pono),Fresh,-,-,,280.0,Kg,110.0,Kwale,2026-10-25,KAMIS
+Vanga,Anchovies,Fresh,-,-,150.0,200.0,Kg,300.0,Kwale,2026-10-25,KAMIS
+Isebania Market,Finger Millet,-,-,-,,160.0,Kg,2000.0,Migori,2026-10-25,KAMIS
+Isebania Market,White Sorghum,-,-,-,,100.0,kg,3000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Red Sorghum,-,-,-,,88.0,Kg,3000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Dry Maize,White Maize,-,-,,52.0,Kg,45000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Pumpkin Leaves,-,-,-,,133.33,Kg,23.0,Migori,2026-10-25,KAMIS
+Isebania Market,Spider flower (Saga),-,-,-,,200.0,Kg,560.0,Migori,2026-10-25,KAMIS
+Isebania Market,Black nightshade (Managu/ Osuga),-,-,-,,200.0,Kg,6500.0,Migori,2026-10-25,KAMIS
+Isebania Market,Tomatoes,-,-,-,,60.0,Kg,2500.0,Migori,2026-10-25,KAMIS
+Isebania Market,Kales/Sukuma Wiki,-,-,-,,80.0,Kg,600.0,Migori,2026-10-25,KAMIS
+Isebania Market,Dry Onions,-,-,-,,110.0,Kg,2000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Coriander (Dhania),-,-,-,,80.0,Kg,600.0,Migori,2026-10-25,KAMIS
+Isebania Market,Cabbages,-,-,-,,33.33,Kg,5000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Banana (Plantain),-,-,-,,40.0,Kg,1500.0,Migori,2026-10-25,KAMIS
+Isebania Market,Banana (Cooking),-,-,-,,100.0,Kg,2000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Ground Nuts,Large Brown,-,-,,260.0,Kg,4000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Beans Rosecoco (Nyayo),-,-,-,,184.0,Kg,4300.0,Migori,2026-10-25,KAMIS
+Isebania Market,Beans Red Haricot (Wairimu),-,-,-,,180.0,Kg,4000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Beans (Yellow-Green),-,-,-,,200.0,Kg,4000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Beans (Mwezi Moja),-,-,-,,180.0,Kg,3000.0,Migori,2026-10-25,KAMIS
+Isebania Market,Beans (Canadian wonder),-,-,-,,160.0,Kg,2300.0,Migori,2026-10-25,KAMIS
+Khayega,Red Irish potato,-,-,-,64.0,66.67,Kg,3000.0,Kakamega,2026-10-25,KAMIS
+Khayega,Arrow Root,-,-,-,125.0,200.0,Kg,400.0,Kakamega,2026-10-25,KAMIS
+Khayega,Sweet potatoes,-,-,-,42.86,57.14,Kg,450.0,Kakamega,2026-10-25,KAMIS
+Khayega,White Irish Potatoes,-,-,-,66.67,70.67,Kg,5500.0,Kakamega,2026-10-25,KAMIS
+Khayega,Water Melon,-,-,-,75.0,75.0,Kg,700.0,Kakamega,2026-10-25,KAMIS
+Khayega,Banana (Ripening),-,-,-,40.0,40.0,Kg,400.0,Kakamega,2026-10-25,KAMIS
+Khayega,Red Sorghum,-,-,-,93.75,106.25,Kg,400.0,Kakamega,2026-10-25,KAMIS
+Khayega,Finger Millet,-,-,-,130.43,130.43,Kg,540.0,Kakamega,2026-10-25,KAMIS
+Khayega,Dry Maize,White Maize,-,-,44.44,48.89,Kg,7200.0,Kakamega,2026-10-25,KAMIS
+Khayega,Spider flower (Saga),-,-,-,60.0,70.0,Kg,650.0,Kakamega,2026-10-25,KAMIS
+Khayega,Ethiopian Kales -Kanzira,-,-,-,55.0,60.0,Kg,300.0,Kakamega,2026-10-25,KAMIS
+Khayega,Black nightshade (Managu/ Osuga),-,-,-,50.0,54.17,Kg,600.0,Kakamega,2026-10-25,KAMIS
+Khayega,Spinach,-,-,-,50.0,60.0,Kg,450.0,Kakamega,2026-10-25,KAMIS
+Khayega,Tomatoes,-,-,-,42.86,50.0,Kg,5000.0,Kakamega,2026-10-25,KAMIS
+Khayega,Kales/Sukuma Wiki,-,-,-,40.91,45.45,Kg,600.0,Kakamega,2026-10-25,KAMIS
+Khayega,Dry Onions,-,-,-,62.5,66.67,Kg,2500.0,Kakamega,2026-10-25,KAMIS
+Khayega,Cabbages,-,-,-,27.5,30.0,Kg,3000.0,Kakamega,2026-10-25,KAMIS
+Khayega,Mixed Beans,-,-,-,108.7,117.39,Kg,700.0,Kakamega,2026-10-25,KAMIS
+Khayega,Green Grams,Local-Special,-,-,130.43,130.43,Kg,900.0,Kakamega,2026-10-25,KAMIS
+Khayega,Ground Nuts,Large Brown,-,-,208.33,229.17,Kg,450.0,Kakamega,2026-10-25,KAMIS
+Khayega,Cowpeas,-,-,-,187.5,208.33,Kg,450.0,Kakamega,2026-10-25,KAMIS
+Khayega,Beans Rosecoco (Nyayo),-,-,-,130.43,130.43,Kg,1240.0,Kakamega,2026-10-25,KAMIS
+Khayega,Beans Rosecoco,-,-,-,130.43,130.43,Kg,800.0,Kakamega,2026-10-25,KAMIS
+Khayega,Beans (Yellow-Green),-,-,-,152.17,152.17,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Khayega,Fertilizer,DAP,-,-,130.0,134.0,Kg,6500.0,Kakamega,2026-10-25,KAMIS
+Khayega,Fertilizer,CAN,-,-,84.0,88.0,Kg,4000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep,Dorper,Grade 3,Female,17000.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep, Blackhead Persian,Grade 2 ,Female,15000.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Goat,Dairy Goats,Grade 2 ,Female,25000.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep,Dorper,Grade 1,Male,9000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep,Dorper,Grade 1,Male,17000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep, Blackhead Persian,Grade 1,Male,9000.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep, Blackhead Persian,Grade 1,Male,15000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Duck,Black Swedish,Grade 1,Male,,,,10.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Meat Beef,-,-,-,450.0,600.0,Kg,5000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Cow Milk(At collection point),-,-,-,50.0,70.0,Lt,200.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Eggs,Indigenous /Kenyeji,-,-,500.0,650.0,Tray(30),500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Eggs,Exotic/Grade,-,-,500.0,650.0,Tray(30),300.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep,Dorper,Grade 1,Male,16000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep,Dorper,Grade 1,Male,9000.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sheep, Blackhead Persian,Grade 1,Male,17000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Chicken,Broiler,-,Male,700.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Goat,Dairy Goats,Grade 1 ,Male,25000.0,,,30.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Duck,Black Swedish,Grade 1,Male,,,,20.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Chicken,Improved Kienyeji,-,Male,1200.0,,,60.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Chicken,Broiler,-,Male,1200.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Cattle,Mixed,Grade 1 ,Male,40000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Cattle,Guernsey ,Grade 1 ,Male,70000.0,,,50.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Cattle,Ayrshire,Grade 1 ,Male,80000.0,,,80.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Tilapia,Fried,-,-,250.0,400.0,Kg,500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Tilapia,Dried,-,-,250.0,400.0,Kg,500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Omena,Dried,-,-,600.0,600.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,White Irish Potatoes,-,-,-,50.0,150.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Sweet potatoes,-,-,-,70.0,100.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Arrow Root,-,-,-,80.0,100.0,Kg,500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Avocado,Fuerte,-,-,40.0,70.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Water Melon,-,-,-,30.0,70.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Avocado,Fuerte,-,-,50.0,80.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Banana (Ripening),-,-,-,30.0,70.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Oranges,-,-,-,30.0,80.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Maize Flour,210(two ten),-,-,100.0,150.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Finger Millet,-,-,-,150.0,200.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Dry Maize,Mixed-Traditional ,-,-,70.0,100.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Cowpea leaves (Kunde),-,-,-,100.0,200.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Black nightshade (Managu/ Osuga),-,-,-,200.0,500.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Amaranthus (Terere),-,-,-,100.0,200.0,Kg,500.0,Kakamega,2026-10-25,KAMIS
+Kakamega Town,Capsicums,-,-,-,60.0,80.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Kales/Sukuma Wiki,-,-,-,150.0,75.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Dry Onions,-,-,-,150.0,75.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Banana (Cooking),-,-,-,75.0,150.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Coriander (Dhania),-,-,-,75.0,75.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Carrots,-,-,-,75.0,150.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Cabbages,-,-,-,150.0,75.0,Kg,1000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Beans (Yellow-Green),-,-,-,160.0,200.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Beans (Mwezi Moja),-,-,-,150.0,200.0,Kg,1500.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Beans Rosecoco,-,-,-,150.0,200.0,Kg,2000.0,Kakamega,2026-10-25,KAMIS
+Kipkaren,Beans (Mwezi Moja),-,-,-,160.0,200.0,Kg,3000.0,Kakamega,2026-10-25,KAMIS
+Muhoroni,Eggs,Exotic/Grade,-,-,420.0,600.0,Tray(30),1200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Cow Milk(At collection point),-,-,-,80.0,90.0,Lt,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Meat Beef,-,-,-,,700.0,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Chicken,Layers,-,Male,250.0,,,500.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Chicken,Indigenous,-,Male,300.0,,,700.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Chicken,Improved Kienyeji,-,Male,1000.0,,,300.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Chicken,Broiler,-,Male,500.0,,,,Kisumu,2026-10-25,KAMIS
+Muhoroni,Omena,Dried,-,-,307.69,538.46,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,White Irish Potatoes,-,-,-,60.0,75.0,Kg,3000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Sweet potatoes,-,-,-,,100.0,Kg,500.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Cassava Chips (dry),-,-,-,,100.0,Kg,100.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Arrow Root,-,-,-,,100.0,Kg,400.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Pineapples,-,-,-,75.0,90.0,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Oranges,-,-,-,60.0,100.0,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Red Sorghum,-,-,-,70.0,90.0,Kg,1200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Dry Maize,White Maize,-,-,50.0,55.0,Kg,5000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Spider flower (Saga),-,-,-,,100.0,Kg,200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Ethiopian Kales -Kanzira,-,-,-,,80.0,Kg,150.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Ethiopian Kales -Kanzira,-,-,-,,100.0,Kg,350.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Cowpea leaves (Kunde),-,-,-,,60.0,Kg,200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Black nightshade (Managu/ Osuga),-,-,-,,80.0,Kg,300.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Amaranthus (Terere),-,-,-,,50.0,Kg,200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Tomatoes,-,-,-,91.43,110.0,Kg,6000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Spring Onions,-,-,-,150.0,250.0,Kg,500.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Kales/Sukuma Wiki,-,-,-,37.14,50.0,Kg,1200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Garlic,-,-,-,400.0,500.0,Kg,200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Dry Onions,-,-,-,100.0,120.0,Kg,2000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Carrots,-,-,-,80.0,120.0,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Capsicums,-,-,-,150.0,200.0,Kg,400.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Cabbages,-,-,-,25.0,35.0,Kg,5000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Banana (Plantain),-,-,-,40.0,60.0,Kg,200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Banana (Cooking),-,-,-,25.0,35.0,Kg,400.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Mixed Beans,-,-,-,107.69,123.08,Kg,800.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Ground Nuts,Small Red,-,-,300.0,400.0,Kg,500.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Ground Nuts,Large Brown,-,-,250.0,350.0,Kg,600.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Green Grams,Local-Special,-,-,150.0,175.0,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Green Grams,Hybrid/ polished,-,-,175.0,200.0,Kg,1400.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Cowpeas,-,-,-,185.0,300.0,Kg,500.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans Rosecoco (Nyayo),-,-,-,115.38,134.62,Kg,1800.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans Rosecoco,-,-,-,115.38,134.62,Kg,2000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans Red Haricot (Wairimu),-,-,-,115.38,134.62,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans (Yellow-Green),-,-,-,173.08,192.31,Kg,2000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans (Mwitemania),-,-,-,115.38,134.62,Kg,800.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans (Mwezi Moja),-,-,-,115.38,134.62,Kg,1200.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Beans (Canadian wonder),-,-,-,115.38,134.62,Kg,1000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Fertilizer,DAP,-,-,110.0,120.0,Kg,6000.0,Kisumu,2026-10-25,KAMIS
+Muhoroni,Fertilizer,CAN,-,-,96.0,104.0,Kg,5000.0,Kisumu,2026-10-25,KAMIS
+Kakamega Town,White Irish Potatoes,-,-,-,54.0,80.0,Kg,10000.0,Kakamega,2026-10-25,KAMIS
+Kakamega Town,Water Melon,-,-,-,46.15,53.85,Kg,4000.0,Kakamega,2026-10-25,KAMIS
+Kakamega Town,Dry Maize,White Maize,-,-,44.44,60.0,Kg,20000.0,Kakamega,2026-10-25,KAMIS
+Kakamega Town,Beans (Yellow-Green),-,-,-,155.56,200.0,Kg,4500.0,Kakamega,2026-10-25,KAMIS
+Kakamega Town,Beans Rosecoco,-,-,-,133.33,175.0,Kg,8000.0,Kakamega,2026-10-25,KAMIS
+Kibuye,Fertilizer,Urea,-,-,40.0,,,32500.0,Kisumu,2026-10-25,KAMIS
+Kibuye,Fertilizer,TSP,-,-,40.0,,,32500.0,Kisumu,2026-10-25,KAMIS
+Kibuye,Fertilizer,Sulphate of Ammonia,-,-,40.0,,,32500.0,Kisumu,2026-10-25,KAMIS
+Kibuye,Fertilizer,NPK,-,-,40.0,,,32500.0,Kisumu,2026-10-25,KAMIS
+Kibuye,Fertilizer,CAN,-,-,40.0,,,47500.0,Kisumu,2026-10-25,KAMIS
+Kibuye,Sunflower Oil,-,-,-,,450.0,Lt,,Kisumu,2026-10-25,KAMIS
+Kibuye,Sunflower Seeds,-,-,-,,45.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans (Canadian wonder),-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans (Mwezi Moja),-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans (Mwitemania),-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans (Yellow-Green),-,-,-,,250.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans Red Haricot (Wairimu),-,-,-,,140.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans Rosecoco,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Beans Rosecoco (Nyayo),-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cowpeas,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Dolichos lablab (Njahi),-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Green Grams,Makueni,-,-,,175.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Green Grams,Local-Special,-,-,,135.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Green Grams,Hybrid/ polished,-,-,,225.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Ground Nuts,Small Red,-,-,,375.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Ground Nuts,Large Brown,-,-,322.22,325.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Mixed Beans,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Njugu Mawe,-,-,-,,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Pigeon peas,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Banana (Cooking),-,-,-,34.29,,,,Kisumu,2026-10-25,KAMIS
+Kibuye,Butternuts,-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cabbages,-,-,-,,80.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Capsicums,-,-,-,,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Carrots,-,-,-,,80.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Chillies,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Coriander (Dhania),-,-,-,,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Dry Onions,-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Garlic,-,-,-,,350.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Ginger,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Green Maize,-,-,-,,90.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Kales/Sukuma Wiki,-,-,-,102.22,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Pumpkin,-,-,-,,346.15,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Spinach,-,-,-,,60.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Spring Onions,-,-,-,,90.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Tomatoes,-,-,-,142.86,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Pumpkin Leaves,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Spider flower (Saga),-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Nderema- Vine Spinach,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Jute Plant (Murenda),-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Indigenous Crotolaria (Mito/Miro),-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Ethiopian Kales -Kanzira,-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cowpea leaves (Kunde),-,-,-,,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Black nightshade (Managu/ Osuga),-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Amaranthus (Terere),-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Wheat Flour,Ajab fortigied Home Baking flour,-,-,,92.5,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Wheat,-,-,-,56.67,65.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Rice,Pishori,-,-,,175.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Rice,IRR,-,-,,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Red Sorghum,-,-,-,,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Paddy Rice,Pishori,-,-,,60.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Paddy Rice,IRR,-,-,,35.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Maize Flour,Jogoo,-,-,,72.5,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Finger Millet,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Dry Maize,Yellow Maize,-,-,,65.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Dry Maize,White Maize,-,-,53.33,57.5,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Apples,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Avocado,Hass,-,-,116.67,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Banana (Ripening),-,-,-,62.86,250.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Limes,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Mangoes,Improved,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Oranges,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Passion Fruits,-,-,-,,200.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Pawpaw,-,-,-,,70.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Pineapples,-,-,-,,142.86,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Tangerine (Sandara),-,-,-,,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Thorn melon,-,-,-,,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Tree tomato,-,-,-,,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Water Melon,-,-,-,,153.85,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Arrow Root,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cassava Chips (dry),-,-,-,,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cassava Fresh,-,-,-,,150.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Red Irish potato,-,-,-,110.0,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Sweet potatoes,-,-,-,30.0,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,White Irish Potatoes,-,-,-,136.0,100.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Fish Maws,-,-,-,,4000.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Fish Oil,-,-,-,,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Nile Perch Skins,-,-,-,,80.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Fish Scales,-,-,-,,40.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Nile Perch Skins,-,-,-,,40.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Haplochromis,Fresh,-,-,,120.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Nile Perch,Fresh,-,-,,400.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Omena,Dried,-,-,,450.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Protopterus,Fresh,-,-,,160.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Tilapia,Fresh,-,-,,400.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Chicken,Layers,-,Female,650.0,,,,Kisumu,2026-10-25,KAMIS
+Kibuye,Chicken,Improved Kienyeji,-,Male,1500.0,,,,Kisumu,2026-10-25,KAMIS
+Kibuye,Chicken,Broiler,-,Male,500.0,,,,Kisumu,2026-10-25,KAMIS
+Kibuye,Duck,Black Swedish,Grade 2,Male,,,,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cow Milk(At collection point),-,-,-,,70.0,Lt,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cow Milk(Processd),-,-,-,,160.0,Lt,,Kisumu,2026-10-25,KAMIS
+Kibuye,Eggs,Indigenous /Kenyeji,-,-,,750.0,Tray(30),,Kisumu,2026-10-25,KAMIS
+Kibuye,Eggs,Exotic/Grade,-,-,,510.0,Tray(30),,Kisumu,2026-10-25,KAMIS
+Kibuye,Honey,Processed,-,-,,1000.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Meat Beef,-,-,-,,760.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Pork,-,-,-,,700.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Cotton,-,-,-,,72.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Maize Bran,-,-,-,,40.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Sunflower Cake,-,-,-,,45.0,Kg,,Kisumu,2026-10-25,KAMIS
+Kibuye,Wheat Bran,-,-,-,,34.0,Kg,,Kisumu,2026-10-25,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 1 ,Female,45000.0,,,2.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 1 ,Male,40000.0,,,3.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 1 ,Female,35000.0,,,5.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 3 ,Female,40000.0,,,6.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 3 ,Male,50000.0,,,4.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 2,Female,48000.0,,,7.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 2,Male,58000.0,,,5.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 1 ,Female,55000.0,,,3.0,Kakamega,2026-10-26,KAMIS
+Butere Livestock Market,Cattle,Zebu,Grade 1 ,Male,65000.0,,,2.0,Kakamega,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 2 ,Female,3500.0,,,65.0,Migori,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 2 ,Female,4500.0,,,47.0,Migori,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 2 ,Female,4500.0,,,72.0,Migori,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 2 ,Female,6000.0,,,122.0,Migori,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 2 ,Male,4000.0,,,49.0,Migori,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 2 ,Male,8000.0,,,173.0,Migori,2026-10-26,KAMIS
+Kababu,Sheep,Red Maasai ,Grade 1,Male,10000.0,,,55.0,Migori,2026-10-26,KAMIS
+Kababu,Goat,East African Goat,Grade 2 ,Male,4000.0,,,59.0,Migori,2026-10-26,KAMIS
+Kababu,Goat,East African Goat,Grade 2 ,Female,5000.0,,,67.0,Migori,2026-10-26,KAMIS
+Kababu,Goat,East African Goat,Grade 2 ,Female,6500.0,,,187.0,Migori,2026-10-26,KAMIS
+Kababu,Goat,-,Grade 2 ,Male,6000.0,,,165.0,Migori,2026-10-26,KAMIS
+Kababu,Goat,East African Goat,Grade 2 ,Male,7000.0,,,244.0,Migori,2026-10-26,KAMIS
+Kababu,Goat,East African Goat,Grade 1 ,Male,8000.0,,,155.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,-,Female,15000.0,,,78.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,Grade 2,Female,26000.0,,,69.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,Grade 2,Female,50000.0,,,96.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,Grade 2,Male,18000.0,,,126.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,Grade 2,Male,25000.0,,,120.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,Grade 2,Male,55000.0,,,280.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Zebu,Grade 1 ,Male,70000.0,,,64.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,-,Grade 3 ,Female,35000.0,,,26.0,Migori,2026-10-26,KAMIS
+Kababu,Cattle,Sahiwal,Grade 1 ,Male,35000.0,,,52.0,Migori,2026-10-26,KAMIS
+Ngurubani Market,Pork,-,-,-,450.0,600.0,Kg,420.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Meat Beef,-,-,-,500.0,700.0,Kg,2400.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Eggs,Exotic/Grade,-,-,420.0,470.0,Tray(30),2500.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,White Irish Potatoes,-,-,-,46.0,60.0,Kg,25000.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Sweet potatoes,-,-,-,80.0,100.0,Kg,420.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Arrow Root,-,-,-,100.0,150.0,Kg,420.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Red Sorghum,-,-,-,90.0,125.0,Kg,3250.0,Kirinyaga,2026-10-26,KAMIS
+Kababu,Cattle,Ayrshire,Grade 1 ,Male,47000.0,,,84.0,Migori,2026-10-26,KAMIS
+Ngurubani Market,Rice,Pishori,-,-,150.0,170.0,Kg,125600.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Dry Maize,White Maize,-,-,46.67,50.0,Kg,6800.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Cowpea leaves (Kunde),-,-,-,25.0,35.0,Kg,320.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Pumpkin Leaves,-,-,-,15.0,20.0,Kg,188.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Black nightshade (Managu/ Osuga),-,-,-,15.0,22.0,Kg,350.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Amaranthus (Terere),-,-,-,15.0,20.0,Kg,250.0,Kirinyaga,2026-10-26,KAMIS
+Kababu,Cattle,Sahiwal,Grade 1 ,Male,96000.0,,,56.0,Migori,2026-10-26,KAMIS
+Kababu,Chicken,Improved Kienyeji,-,Female,500.0,,,74.0,Migori,2026-10-26,KAMIS
+Kababu,Chicken,Improved Kienyeji,-,Female,1000.0,,,95.0,Migori,2026-10-26,KAMIS
+Kababu,Chicken,Improved Kienyeji,-,Male,600.0,,,66.0,Migori,2026-10-26,KAMIS
+Kababu,Chicken,Improved Kienyeji,-,Male,1000.0,,,988.0,Migori,2026-10-26,KAMIS
+Kababu,Chicken,Improved Kienyeji,-,Male,1200.0,,,78.0,Migori,2026-10-26,KAMIS
+Ngurubani Market,Pigeon peas,-,-,-,100.0,135.0,Kg,3525.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Mixed Beans,-,-,-,91.11,115.0,Kg,2148.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Lentils,-,-,-,183.33,210.0,Kg,1850.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Green Grams,Hybrid/ polished,-,-,100.0,135.0,Kg,2500.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Dolichos lablab (Njahi),-,-,-,90.0,110.0,Kg,4500.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Cowpeas,-,-,-,97.78,125.0,Kg,4100.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Beans Rosecoco (Nyayo),-,-,-,110.0,150.0,Kg,3250.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Beans Red Haricot (Wairimu),-,-,-,100.0,125.0,Kg,6580.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Beans (Yellow-Green),-,-,-,120.0,175.0,Kg,5800.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Beans (Mwitemania),-,-,-,90.0,112.5,Kg,2450.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Water Melon,-,-,-,32.0,40.0,Kg,25800.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Tree tomato,-,-,-,70.0,110.0,Kg,280.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Thorn melon,-,-,-,90.0,130.0,Kg,220.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Pineapples,-,-,-,60.0,90.0,Kg,1520.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Pawpaw,-,-,-,35.0,50.0,Kg,185.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Passion Fruits,-,-,-,160.0,220.0,Kg,425.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Oranges,-,-,-,100.0,150.0,Kg,1450.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Lemons,-,-,-,40.0,60.0,Kg,215.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Avocado,Local,-,-,70.0,100.0,Kg,2100.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Tomatoes,-,-,-,37.5,42.5,Kg,4210.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Spring Onions,-,-,-,40.0,60.0,Kg,250.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Pumpkin,-,-,-,27.0,33.0,Kg,3200.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Kales/Sukuma Wiki,-,-,-,15.0,20.0,Kg,1450.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Green Maize,-,-,-,50.0,70.0,Kg,2150.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Fresh Peas,On pods,-,-,80.0,100.0,Kg,480.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,French beans,-,-,-,60.0,80.0,Kg,320.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Egg plant (Brinjals),-,-,-,25.0,35.0,Kg,120.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Dry Onions,-,-,-,80.0,100.0,Kg,6520.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Cucumber,-,-,-,30.0,45.0,Kg,215.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Courgette,-,-,-,50.0,80.0,Kg,240.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Coriander (Dhania),-,-,-,50.0,80.0,Kg,215.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Chillies,-,-,-,50.0,70.0,Kg,215.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Carrots,-,-,-,50.0,65.0,Kg,2540.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Capsicums,-,-,-,45.0,65.0,Kg,215.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Cabbages,-,-,-,35.0,50.0,Kg,21500.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Butternuts,-,-,-,38.0,50.0,Kg,3250.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Banana (Cooking),-,-,-,25.0,35.0,Kg,2580.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Fertilizer,NPK,-,-,96.0,110.0,Kg,251000.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Fertilizer,DAP,-,-,136.0,140.0,Kg,123500.0,Kirinyaga,2026-10-26,KAMIS
+Ngurubani Market,Fertilizer,CAN,-,-,68.0,80.0,Kg,52500.0,Kirinyaga,2026-10-26,KAMIS
+Mabera,Goat,Mixed,Grade 3  ,Male,7500.0,,,200.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,Mixed,Grade 2 ,Male,9000.0,,,150.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,Mixed,Grade 1 ,Male,11000.0,,,100.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,East African Goat,Grade 3  ,Female,7500.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,East African Goat,Grade 2 ,Female,8500.0,,,150.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,East African Goat,Grade 1 ,Female,10000.0,,,50.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,East African Goat,Grade 3  ,Male,8000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,East African Goat,Grade 2 ,Male,10000.0,,,100.0,Migori,2026-10-26,KAMIS
+Mabera,Goat,East African Goat,Grade 1 ,Male,12000.0,,,50.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Mixed,Grade 5,Male,55000.0,,,200.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Mixed,Grade 4 ,Male,60000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Mixed,Grade 3 ,Male,65000.0,,,200.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Mixed,Grade 2,Male,70000.0,,,150.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Mixed,Grade 1 ,Male,75000.0,,,100.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 4 ,Female,50000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 3 ,Female,60000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 2,Female,65000.0,,,150.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 1 ,Female,70000.0,,,20.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 5,Male,50000.0,,,200.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 4 ,Male,60000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 3 ,Male,65000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 2,Male,70000.0,,,100.0,Migori,2026-10-26,KAMIS
+Mabera,Cattle,Zebu,Grade 1 ,Male,80000.0,,,30.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Indigenous,-,Female,650.0,,,350.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Indigenous,-,Male,800.0,,,150.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Indigenous,-,Female,850.0,,,200.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Indigenous,-,Male,1200.0,,,50.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Improved Kienyeji,-,Female,750.0,,,300.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Improved Kienyeji,-,Male,1000.0,,,250.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Improved Kienyeji,-,Female,1000.0,,,150.0,Migori,2026-10-26,KAMIS
+Mabera,Chicken,Improved Kienyeji,-,Male,1700.0,,,50.0,Migori,2026-10-26,KAMIS
+Kalundu,Pigeon peas,-,-,-,100.0,120.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Green Grams,Makueni,-,-,144.44,160.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Cowpeas,-,-,-,100.0,120.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Beans Rosecoco (Nyayo),-,-,-,138.89,150.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Beans (Yellow-Green),-,-,-,150.0,160.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,White Irish Potatoes,-,-,-,61.05,80.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Sweet potatoes,-,-,-,70.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Cassava Fresh,-,-,-,30.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Arrow Root,-,-,-,120.0,120.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Tangerine (Sandara),-,-,-,80.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Water Melon,-,-,-,40.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Thorn melon,-,-,-,60.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Oranges,-,-,-,80.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Lemons,-,-,-,50.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Banana (Ripening),-,-,-,32.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Pearl Rush Millet,-,-,-,80.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Finger Millet,-,-,-,133.33,150.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Dry Maize,White Maize,-,-,42.22,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Spider flower (Saga),-,-,-,30.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Cowpea leaves (Kunde),-,-,-,30.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Black nightshade (Managu/ Osuga),-,-,-,30.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Amaranthus (Terere),-,-,-,30.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Tomatoes,-,-,-,54.69,80.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Spinach,-,-,-,40.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Okra (Lady's fingers or Gumbo),-,-,-,150.0,250.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Kales/Sukuma Wiki,-,-,-,30.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Ginger,-,-,-,150.0,200.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Garlic,-,-,-,370.0,500.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Fresh Peas,On pods,-,-,100.0,130.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Egg plant (Brinjals),-,-,-,80.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,French beans,-,-,-,80.0,140.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Dry Onions,-,-,-,50.0,60.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Chillies,-,-,-,150.0,200.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Carrots,-,-,-,59.09,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Capsicums,-,-,-,40.0,100.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Cabbages,-,-,-,38.0,52.0,Kg,,Kitui,2026-10-26,KAMIS
+Kalundu,Banana (Cooking),-,-,-,28.0,50.0,Kg,,Kitui,2026-10-26,KAMIS
+Diani Market,White Irish Potatoes,-,-,-,60.0,100.0,Kg,3000.0,Kwale,2026-10-26,KAMIS
+Diani Market,Okra (Lady's fingers or Gumbo),-,-,-,40.0,80.0,Kg,800.0,Kwale,2026-10-26,KAMIS
+Diani Market,Tomatoes,-,-,-,60.0,100.0,Kg,3000.0,Kwale,2026-10-26,KAMIS
+Diani Market,Dry Onions,-,-,-,55.0,80.0,Kg,3000.0,Kwale,2026-10-26,KAMIS
+Diani Market,Carrots,-,-,-,50.0,80.0,Kg,1000.0,Kwale,2026-10-26,KAMIS
+Diani Market,Cabbages,-,-,-,80.0,120.0,Kg,2000.0,Kwale,2026-10-26,KAMIS
+Eldoret Main,Eggs,Exotic/Grade,-,-,420.0,460.0,Tray(30),30.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Chicken,Broiler,-,Male,500.0,,,50.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Sweet potatoes,-,-,-,70.0,100.0,Kg,2000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,White Irish Potatoes,-,-,-,65.0,75.0,Kg,3000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Arrow Root,-,-,-,120.0,150.0,Kg,250.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Pineapples,-,-,-,120.0,150.0,Kg,1000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Pawpaw,-,-,-,80.0,100.0,Kg,250.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Passion Fruits,-,-,-,60.0,80.0,Kg,450.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Oranges,-,-,-,35.0,40.0,Kg,3600.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Mangoes,Improved,-,-,46.67,53.33,Kg,2000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Avocado,Hass,-,-,40.0,60.0,Kg,2000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Wheat,-,-,-,115.0,125.0,Kg,300.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Dry Maize,White Maize,-,-,50.0,55.0,Kg,270.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Spider flower (Saga),-,-,-,50.0,60.0,Kg,250.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Black nightshade (Managu/ Osuga),-,-,-,60.0,80.0,Kg,450.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Tomatoes,-,-,-,80.0,100.0,Kg,5000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Spring Onions,-,-,-,80.0,100.0,Kg,500.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Kales/Sukuma Wiki,-,-,-,45.0,60.0,Kg,450.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Coriander (Dhania),-,-,-,80.0,100.0,Kg,250.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Carrots,-,-,-,50.0,60.0,Kg,450.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Capsicums,-,-,-,60.0,80.0,Kg,400.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Cabbages,-,-,-,40.0,50.0,Kg,2000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Butternuts,-,-,-,70.0,100.0,Kg,1500.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Broccoli,-,-,-,70.0,80.0,Kg,150.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Banana (Cooking),-,-,-,80.0,100.0,Kg,1200.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Ground Nuts,Large Brown,-,-,175.0,200.0,Kg,2300.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Green Grams,Hybrid/ polished,-,-,175.0,200.0,Kg,2000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Beans Rosecoco (Nyayo),-,-,-,175.0,200.0,Kg,5000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Beans Rosecoco,-,-,-,190.0,200.0,Kg,2500.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Beans (Yellow-Green),-,-,-,200.0,225.0,Kg,3000.0,Uasin-Gishu,2026-10-26,KAMIS
+Eldoret Main,Beans (Mwitemania),-,-,-,190.0,210.0,Kg,2500.0,Uasin-Gishu,2026-10-26,KAMIS
