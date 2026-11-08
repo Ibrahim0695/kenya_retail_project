@@ -43,6 +43,33 @@ topics, where separate consumers process sales and inventory events. This is
 an independent local workflow, not part of the scheduled batch pipeline; its
 consumer state is not persisted between runs.
 
+## Example landing batches
+
+Raw batches are written under `data/landing/<source>/<timestamp>/`.
+
+| Source | Batch folder | Date range | Rows |
+| --- | --- | --- | ---: |
+| KAMIS | [`data/landing/kamis/2026-10-29_064850/`](data/landing/kamis/2026-10-29_064850/) | 2026-10-27 to 2026-10-28 | 692 |
+| KNBS CPI | [`data/landing/knbs_pdf/2026-10-26_122403/`](data/landing/knbs_pdf/2026-10-26_122403/) | 2026-09 | 14 |
+| Operational | [`data/landing/operational/2026-10-29_064112/`](data/landing/operational/2026-10-29_064112/) | 2025-04-01 to 2026-10-29 | 6 CSV tables |
+
+The KAMIS and KNBS folders each contain a CSV and `manifest.json`. For example,
+the [KAMIS manifest](data/landing/kamis/2026-10-29_064850/manifest.json)
+records `source: kamis`, `rows: 692`, the date range above, and
+`file: kamis_prices.csv`. Its [CSV data](data/landing/kamis/2026-10-29_064850/kamis_prices.csv)
+starts with this header and a sample row:
+
+```csv
+market,commodity,classification,grade,sex,wholesale_price,retail_price,unit,supply_volume,county,survey_date,source
+Vanga,Octopus (Pweza),Fresh,-,-,500.0,700.0,Kg,69.0,Kwale,2026-10-27,KAMIS
+```
+
+The [operational batch](data/landing/operational/2026-10-29_064112/) has one
+manifest and six CSVs:
+`store_master.csv` (6 rows), `product_master.csv` (12), `supplier_master.csv`
+(5), `pos_transactions.csv` (22,550), `pos_transaction_lines.csv` (56,512),
+and `inventory_movements.csv` (33,314).
+
 ## Where to look
 
 - [`sources/`](sources/) contains the KAMIS, KNBS, and operational ingestors.
