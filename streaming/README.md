@@ -1,7 +1,7 @@
 # Operational Kafka event pipeline
 
 This pipeline replays operational landing-zone CSVs to versioned Kafka topics.
-It is a local development/demo workflow: it simulates live POS and inventory
+It is a local development workflow: it simulates live POS and inventory
 events from synthetic data; it does not connect to a real retailer's POS.
 
 ## Start Kafka (PowerShell)
@@ -53,6 +53,31 @@ inventory processor uses `retail-inventory-processor-v1`. Start another
 instance with the same stream argument to add a worker to that stream's group.
 Consumers start at the earliest offset if the group has not consumed before,
 and manually commit each successfully processed message.
+
+## Verified end-to-end replay
+
+On 2026-11-08, the operational batch `2026-10-29_064112` was replayed to the
+local broker. The 56,635-event cap includes all 23 master-data rows, 56,512
+sales lines, and the first 100 inventory movements. Each consumer then
+processed 100 messages. The producer reported:
+
+```text
+[producer] replaying operational batch /opt/retail/data/landing/operational/2026-10-29_064112
+[producer] delivered 56,635 event(s)
+```
+
+The sales consumer report:
+
+```json
+{"processor":"sales","sale_lines":100,"gross_sales":31610.3,"gross_sales_by_store":{"ST001":1585.98,"ST002":9499.33,"ST003":4485.35,"ST004":3488.88,"ST005":8584.87,"ST006":3965.89}}
+```
+
+The inventory consumer report excerpt (the per-store/product balance list is
+omitted here):
+
+```text
+{"processor":"inventory","movements":100,"movement_types":{"DELIVERY":18,"OPENING":72,"SALE":10},"on_hand_by_store_product":[...]}
+```
 
 ## Topics
 
