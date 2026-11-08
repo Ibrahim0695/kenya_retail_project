@@ -45,7 +45,7 @@ warehouse. It loads the project-root `.env` first, then `.env.docker`, and
 prefers `DATABASE_NAME`, `DATABASE_HOST`, `DATABASE_PORT`, `DATABASE_USER`,
 and `DATABASE_PASSWORD`. If those are absent, it accepts the legacy
 `WAREHOUSE_DB_*` variables; the fallback host is `localhost` and the fallback
-port is `5433`. Keep both environment files private.
+port is `5433`.
 
 Install the Spark dependencies if needed, then run from the project root:
 
@@ -103,6 +103,49 @@ see [warehouse_model.md](warehouse_model.md) and
 
 For scheduled ingestion, retries, backfills, and the PostgreSQL quality gate,
 see the [Airflow DAG documentation](../dags/README.md).
+
+## Medallion output evidence
+
+The following counts are from a successful Spark 3.5.4 run on 2026-11-08 using
+the landed batches in `data/landing/`. Bronze retains every available snapshot;
+Silver deduplicates or consolidates records; Gold changes to reporting grains.
+
+| Example dataset | Bronze | Silver | Gold |
+| --- | ---: | ---: | ---: |
+| KAMIS prices | 8,886 source observations | 3,276 market/day rows | 415 latest-market rows |
+| KNBS CPI | 56 rows across reports | 14 series/month rows | 14 latest-report rows |
+| Operational sales lines | 297,783 rows across snapshots | 56,512 rows from newest snapshot | 6,923 daily product rows |
+
+Selected lines from the successful run:
+
+```text
+[spark:bronze] kamis/kamis: 8,886 rows
+[spark:bronze] operational/transaction_lines: 297,783 rows
+[spark:silver] operational/transaction_lines: 56,512 rows
+[spark:silver] KAMIS observations consolidated: 8,886 rows -> 3,276 market/day rows
+[spark:gold] sales_daily_by_product: 6,923 rows
+[spark] medallion outputs written under /opt/retail/data
+```
+
+For example, the KAMIS key `(Lungalunga, Water Melon, -, -, -, Kg, Kwale,
+2026-10-16)` appears twice in the source data:
+
+| Layer | Wholesale | Retail | Supply volume | Rows |
+| --- | ---: | ---: | ---: | ---: |
+| Bronze observations | 100, 30 | 150, 50 | 700, 800 | 2 |
+| Silver consolidated | 65 | 100 | 1,500 | 1 |
+
+Silver averages the prices and sums supply volume at the market/day grain.
+For a type change, `base_price` is `string` in Bronze
+`operational/products` and `double` in Silver `operational/products`.
+
+Representative column/type schemas from that run:
+
+| Layer and dataset | Columns (`name:type`) |
+| --- | --- |
+| Bronze `operational/products` | `product_id:string`, `product_name:string`, `category:string`, `base_price:string`, `_source:string`, `_source_batch:string`, `_source_file:string`, `_ingested_at:timestamp` |
+| Silver `operational/products` | `product_id:string`, `product_name:string`, `category:string`, `base_price:double` |
+| Gold `sales_daily_by_store` | `sale_date:date`, `store_id:string`, `store_name:string`, `county:string`, `payment_method:string`, `transaction_count:bigint`, `units_sold:bigint`, `gross_sales:double` |
 
 ## Data quality gate
 
