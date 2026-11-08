@@ -11,11 +11,43 @@ retail snapshot through these steps:
 4. Run and record the data-quality checks.
 5. Refresh the PostgreSQL `gold` and `warehouse` tables.
 
-The DAG allows one active run at a time and does not backfill missed schedules
-automatically. Tasks retry twice with an exponential delay, starting at five
-minutes and capped at 30 minutes. If ingestion or Spark itself fails, Airflow
-does not run the downstream tasks. Task and DAG failure callbacks log the
-relevant run, task, and error details.
+The DAG allows one active run at a time, starts on 2026-11-05 in the
+`Africa/Nairobi` timezone, and sets `catchup=True`. When the Airflow scheduler
+is running and parses the updated DAG, it schedules missed daily intervals from
+that start date. This bounds automatic catchup to recent runs rather than
+replaying history from 2025. The scheduler may start those runs automatically;
+no separate trigger is required. Tasks retry twice with an exponential delay,
+starting at five minutes and capped at 30 minutes. If ingestion or Spark itself
+fails, Airflow does not run the downstream tasks. Task and DAG failure
+callbacks log the relevant run, task, and error details.
+
+## Run evidence
+
+The local Airflow history includes a successful run,
+`scheduled__2026-10-27T21:00:00+00:00` (execution date 2026-10-27). All seven
+tasks finished successfully. Excerpts from its task logs show KAMIS recovering
+after a network failure and the medallion build succeeding on its second
+attempt:
+
+```text
+[2026-10-29T06:41:00.297+0000] Marking task as UP_FOR_RETRY ... task_id=ingest_kamis
+[2026-10-29T06:41:00.302+0000] Retrying pipeline task: ... task_id=ingest_kamis try_number=1
+[2026-10-29T06:48:51.018+0000] [kamis] saved 692 rows -> .../2026-10-29_064850
+[2026-10-29T06:48:51.067+0000] Marking task as SUCCESS ... task_id=ingest_kamis
+```
+
+The same run's Spark build first failed on conflicting KAMIS business keys,
+then completed and marked the task successful on its next attempt:
+
+```text
+spark.data_quality.DataQualityError: Conflicting duplicate business keys found in KAMIS
+[2026-10-29T07:50:22.435+0000] [spark] medallion outputs written under /opt/retail/data
+[2026-10-29T07:50:23.821+0000] Marking task as SUCCESS ... task_id=build_bronze_silver_gold
+```
+
+The run evidence above predates the 2026-11-05 start date and catchup
+configuration. It demonstrates retry recovery, not an automatically caught-up
+run.
 
 ## Data quality and duplicate handling
 
@@ -53,11 +85,12 @@ The containerized deployment shares the `data/` directory between Airflow
 services. This keeps landing batches, Parquet outputs, and quality reports
 available across tasks and container restarts.
 
-## Backfills
+## Manual backfills
 
-To run a manual backfill, provide both `start_date` and `end_date` in
-`YYYY-MM-DD` format. The dates are inclusive; a single run can cover at most
-31 days and cannot end in the future. For example:
+Manual backfills remain available when a specific range is needed: trigger the
+DAG with both `start_date` and `end_date` in `YYYY-MM-DD` format. The dates are
+inclusive; a single run can cover at most 31 days and cannot end in the future.
+For example:
 
 ```json
 {
