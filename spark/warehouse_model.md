@@ -236,7 +236,7 @@ CREATE TABLE IF NOT EXISTS warehouse.fact_macro_indicators (
     date_key INTEGER NOT NULL REFERENCES warehouse.dim_date(date_key),
     series_id TEXT NOT NULL,
     series_name TEXT,
-    cpi_index DOUBLE PRECISION,
+    cpi_index DOUBLE PRECISION, -- NULL: KNBS provides inflation/weights, not index values.
     inflation_rate_yoy DOUBLE PRECISION,
     month_on_month_pct DOUBLE PRECISION,
     weight_pct DOUBLE PRECISION,
@@ -302,3 +302,115 @@ CREATE TABLE IF NOT EXISTS warehouse.fact_inventory_position (
 tables. Use `fact_sales` for transaction-line analyses and do not add the
 aggregate sales facts to `fact_sales` in the same measure calculation, as that
 would double-count revenue.
+
+## Example analytical query results
+
+These results were captured on 2026-11-08 by running all five read-only
+queries in [warehouse_queries.sql](warehouse_queries.sql) against the local
+PostgreSQL warehouse. Currency and price values below are rounded to two
+decimal places for readability. The operational POS data is synthetic.
+
+### 1. Regional sales performance
+
+All five result rows:
+
+| Region | County | Transactions | Revenue |
+|---|---|---:|---:|
+| Nairobi | Nairobi | 7,545 | 5,340,735.12 |
+| Coast | Mombasa | 3,802 | 2,672,905.72 |
+| Nyanza | Kisumu | 3,738 | 2,648,049.01 |
+| Rift Valley | Nakuru | 3,788 | 2,639,521.43 |
+| Rift Valley | Uasin Gishu | 3,677 | 2,626,651.97 |
+
+Nairobi leads the sample in transaction-line revenue, while the other counties
+are comparatively close; an analyst can use this to prioritize regional
+follow-up.
+
+### 2. Supermarket price competitiveness
+
+All 12 products are returned; this excerpt shows the comparison fields:
+
+| Product | Basis | Supermarket | KAMIS | Survey date | Premium | Result |
+|---|---|---:|---:|---|---:|---|
+| Bar Soap | each | 209.87 | — | — | — | Needs verified commodity mapping |
+| Bread 400g | kg | 150.21 | — | — | — | Needs verified commodity mapping |
+| Cooking Fat 1kg | kg | 160.11 | — | — | — | Needs verified commodity mapping |
+| Cooking Oil 1L | l | 280.31 | — | — | — | Needs verified commodity mapping |
+| Fresh Milk 1L | l | 54.95 | — | — | — | Needs verified commodity mapping |
+| Maize Flour 2kg | kg | 48.02 | 111.25 | 2026-10-25 | -56.84% | Supermarket below KAMIS |
+| Onions 1kg | kg | 85.14 | — | — | — | Needs verified commodity mapping |
+| Rice 1kg | kg | 190.19 | 171.43 | 2026-10-28 | 10.95% | Supermarket above KAMIS |
+| Sugar 1kg | kg | 155.02 | — | — | — | No latest comparable KAMIS price |
+| Tea Leaves 500g | kg | 479.50 | — | — | — | Needs verified commodity mapping |
+| Tomatoes 1kg | kg | 94.88 | 83.33 | 2026-10-28 | 13.85% | Supermarket above KAMIS |
+| Wheat Flour 1kg | kg | 62.03 | 92.50 | 2026-10-25 | -32.94% | Supermarket below KAMIS |
+
+The comparison highlights where mapped supermarket prices are above or below
+the latest available KAMIS survey, while keeping unmapped or unavailable
+comparisons explicit rather than implying equivalence.
+
+### 3. Daily sales trend by store
+
+The query returns 3,462 rows; the first eight, ordered by latest date and
+revenue:
+
+| Date | Store | County | Revenue | Units | Transactions |
+|---|---|---|---:|---:|---:|
+| 2026-10-29 | Eldoret Plaza | Uasin Gishu | 4,822.63 | 31 | 7 |
+| 2026-10-29 | Mombasa Town | Mombasa | 4,546.20 | 30 | 6 |
+| 2026-10-29 | Kisumu Main | Kisumu | 4,432.50 | 29 | 5 |
+| 2026-10-29 | Nairobi CBD | Nairobi | 2,355.70 | 24 | 6 |
+| 2026-10-29 | Nakuru Centre | Nakuru | 2,142.75 | 17 | 5 |
+| 2026-10-29 | Nairobi West | Nairobi | 1,727.85 | 13 | 4 |
+| 2026-10-28 | Eldoret Plaza | Uasin Gishu | 4,623.09 | 31 | 7 |
+| 2026-10-28 | Nakuru Centre | Nakuru | 4,190.54 | 37 | 7 |
+
+This daily view helps analysts compare store performance and spot changes in
+sales, units, and transaction volume over time.
+
+### 4. Monthly KNBS inflation by division
+
+All 14 results are for September 2026; `cpi_index` is `NULL` in every row:
+
+| Series | Year-over-year inflation | Month-over-month change | Weight |
+|---|---:|---:|---:|
+| CPI_02 Alcoholic Beverages, Tobacco and Narcotics | 2.8% | 0.4% | 3.3289% |
+| CPI_ALL_ITEMS | 6.8% | 0.4% | 100.0000% |
+| CPI_03 Clothing and Footwear | 2.2% | 0.1% | 2.9914% |
+| CPI_10 Education Services | 3.0% | 0.1% | 5.5620% |
+| CPI_01 Food and Non-Alcoholic Beverages | 9.5% | 0.9% | 32.9094% |
+| CPI_05 Furnishings, Household Equipment and Routine Household Maintenance | 3.1% | 0.2% | 3.7372% |
+| CPI_06 Health | 2.8% | 0.1% | 2.9116% |
+| CPI_04 Housing, Water, Electricity, Gas and Other Fuels | 3.2% | 0.1% | 14.6124% |
+| CPI_08 Information and Communication | 0.8% | 0.1% | 7.7840% |
+| CPI_12 Insurance and Financial Services | 1.1% | 0.0% | 2.2423% |
+| CPI_13 Personal Care, Social Protection and Miscellaneous Goods and Services | 2.5% | 0.2% | 4.4532% |
+| CPI_09 Recreation, Sport and Culture | 3.5% | 0.1% | 1.7219% |
+| CPI_11 Restaurants and Accommodation Services | 3.0% | 0.1% | 8.0991% |
+| CPI_07 Transport | 15.6% | -0.4% | 9.6468% |
+
+Food inflation is above the all-items rate in this report, which can inform
+retail pricing context; the absent index level means these results cannot be
+used to deflate nominal sales or prices.
+
+### 5. Inventory position by store and product
+
+The query returns 72 rows; these are the 12 products for Eldoret Plaza:
+
+| Product | Category | On hand | Delivered | Sold |
+|---|---|---:|---:|---:|
+| Bar Soap | Household | -329 | 1,200 | 1,561 |
+| Bread 400g | Cereals & Grains | -49 | 1,368 | 1,493 |
+| Cooking Fat 1kg | Cooking Fats & Oils | -523 | 951 | 1,504 |
+| Cooking Oil 1L | Cooking Fats & Oils | -105 | 1,436 | 1,617 |
+| Fresh Milk 1L | Dairy | -414 | 1,090 | 1,563 |
+| Maize Flour 2kg | Cereals & Grains | -366 | 1,100 | 1,537 |
+| Onions 1kg | Fresh Produce | -286 | 1,103 | 1,458 |
+| Rice 1kg | Cereals & Grains | 232 | 1,741 | 1,552 |
+| Sugar 1kg | Sugar & Tea | -136 | 1,368 | 1,535 |
+| Tea Leaves 500g | Sugar & Tea | -321 | 1,213 | 1,606 |
+| Tomatoes 1kg | Fresh Produce | -133 | 1,289 | 1,491 |
+| Wheat Flour 1kg | Cereals & Grains | -404 | 1,158 | 1,590 |
+
+Negative on-hand balances in this synthetic movement data are a useful
+reconciliation/restock signal, not proof of real-world stock-outs.
