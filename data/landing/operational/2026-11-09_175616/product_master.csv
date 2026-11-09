@@ -1,0 +1,13 @@
+product_id,product_name,category,base_price
+P01,Maize Flour 2kg,Cereals & Grains,96.0
+P02,Rice 1kg,Cereals & Grains,190.0
+P03,Wheat Flour 1kg,Cereals & Grains,62.0
+P04,Cooking Oil 1L,Cooking Fats & Oils,280.0
+P05,Sugar 1kg,Sugar & Tea,155.0
+P06,Tea Leaves 500g,Sugar & Tea,240.0
+P07,Fresh Milk 1L,Dairy,55.0
+P08,Tomatoes 1kg,Fresh Produce,95.0
+P09,Onions 1kg,Fresh Produce,85.0
+P10,Bar Soap,Household,210.0
+P11,Cooking Fat 1kg,Cooking Fats & Oils,160.0
+P12,Bread 400g,Cereals & Grains,60.0

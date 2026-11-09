@@ -1,0 +1,16 @@
+Airflow DAG run evidence captured from the authenticated Airflow Grid.
+
+DAG: kenya_retail_daily_pipeline
+Run ID: manual__2026-11-09T17:18:07+00:00
+Run state: running
+
+Task states at capture:
+validate_run_configuration: success
+ingest_kamis: success
+ingest_knbs_latest_report: success
+ingest_operational_snapshot: success
+build_bronze_silver_gold: running
+validate_data_quality: not started
+load_postgres_warehouse: not started
+
+This is evidence of an active run, not a successful end-to-end execution.

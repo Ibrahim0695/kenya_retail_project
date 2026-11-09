@@ -12,31 +12,7 @@ shared and persist across container rebuilds. The DAG and source-code folders
 are bind-mounted into the scheduler and webserver so local code changes are
 used without reinstalling the large Spark dependency layer.
 
-## Configure and deploy
-
-Keep the project-root `.env` with the host PostgreSQL connection settings:
-`DATABASE_NAME`, `DATABASE_HOST`, `DATABASE_PORT`, `DATABASE_USER`, and
-`DATABASE_PASSWORD`. Keep it private.
-
-Create the Airflow-specific environment file and fill its local secrets:
-
-```powershell
-Copy-Item .env.docker.example .env.docker
-```
-
-Set distinct values for `AIRFLOW_DB_PASSWORD`, `AIRFLOW_ADMIN_PASSWORD`,
-`AIRFLOW_FERNET_KEY`, and `AIRFLOW_WEBSERVER_SECRET_KEY`; set
-`AIRFLOW_ADMIN_USER` as desired. The metadata database password must be
-URL-safe because Compose places it in Airflow's SQLAlchemy URL. Generate a
-Fernet key with:
-
-```powershell
-python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
-```
-
-Your host PostgreSQL must accept TCP connections from Docker. It cannot be
-restricted to loopback only; its `listen_addresses` and `pg_hba.conf` must allow
-the Docker host/network.
+## Deploy
 
 Build and start the services:
 
@@ -45,11 +21,77 @@ docker compose --env-file .env.docker up -d --build
 docker compose --env-file .env.docker ps
 ```
 
+The commands require private local `.env` and `.env.docker` files; do not commit
+them. Your host PostgreSQL must accept TCP connections from Docker. It cannot
+be restricted to loopback only; its `listen_addresses` and `pg_hba.conf` must
+allow the Docker host/network.
+
 Airflow initialization migrates its metadata database, creates the admin user
 if absent, and unpauses `kenya_retail_daily_pipeline`. Sign in at
 `http://localhost:8080` using the configured admin credentials. Successful
 daily runs ingest sources, build bronze/silver/gold, validate data quality, and
 refresh the host PostgreSQL gold and warehouse schemas.
+
+## Verification evidence
+
+The test suite was run on 2026-11-08 with Python 3.12.1 in the configured
+project environment:
+
+```text
+python -m unittest discover tests
+............
+Ran 12 tests in 83.268s
+
+OK
+```
+
+The `docker compose --env-file .env.docker ps` snapshot captured on 2026-11-08
+showed all long-running services healthy:
+
+```text
+SERVICE             STATE     HEALTH
+airflow-db          running   healthy
+airflow-scheduler   running   healthy
+airflow-webserver   running   healthy
+kafka               running   healthy
+```
+
+The one-shot `airflow-init` container exited with code 0 after initialization.
+The Airflow webserver health endpoint returned HTTP 200 and reported both the
+metadatabase and scheduler as healthy.
+
+The scheduler was briefly started to verify an Airflow execution, but its
+persisted `DagModel.next_dagrun` still pointed to
+`2026-10-28T21:00:00+00:00`, before the DAG's configured `2026-11-05` start
+date. With `catchup=True`, it created that older run. The observed state when
+the scheduler was stopped was:
+
+```text
+run_id: scheduled__2026-10-28T21:00:00+00:00
+run state: running
+validate_run_configuration: success
+ingest_kamis: success
+ingest_knbs_latest_report: success
+ingest_operational_snapshot: success
+build_bronze_silver_gold: running
+validate_data_quality: not started
+load_postgres_warehouse: not started
+```
+
+Thus, this is evidence of a partial execution, not a successful end-to-end
+DAG run. The ingestion tasks created local landing batches, and the Spark
+build had started; quality validation and the warehouse refresh had not run
+when the scheduler was first stopped. After the scheduler was restarted, this
+run resumed: its Spark build is running on attempt 2, while quality validation
+and PostgreSQL loading have not yet started. The run is not yet a successful
+end-to-end DAG execution. The scheduler's stored next-run pointer still refers
+to the October 28 interval, before the configured November 5 DAG start date;
+monitor the active run and resolve the stale scheduling pointer carefully,
+since catchup may schedule intervals outside the intended window.
+
+Airflow's earlier stored history includes a successful
+`kenya_retail_daily_pipeline` run (`scheduled__2026-10-27T21:00:00+00:00`),
+but that is separate from the interrupted run above.
 
 ## PostgreSQL and pipeline monitoring
 
@@ -89,3 +131,6 @@ does not delete the host PostgreSQL database or project data.
 This is a local development deployment, not an internet-facing production
 configuration. Published service ports bind to loopback; keep `.env` and
 `.env.docker` private.
+
+The latest test, service-health, and Airflow UI evidence is in
+[`evidence/deployment/2026-11-09/`](evidence/deployment/2026-11-09/).

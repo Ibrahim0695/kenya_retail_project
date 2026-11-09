@@ -1,0 +1,5 @@
+﻿NAME                                      IMAGE                        COMMAND                  SERVICE             CREATED       STATUS                  PORTS
+kenya-retail-school-airflow-db-1          postgres:16-alpine           "docker-entrypoint.s…"   airflow-db          11 days ago   Up 11 days (healthy)    5432/tcp
+kenya-retail-school-airflow-scheduler-1   kenya-retail-airflow:local   "/usr/bin/dumb-init …"   airflow-scheduler   11 days ago   Up 24 hours (healthy)   8080/tcp
+kenya-retail-school-airflow-webserver-1   kenya-retail-airflow:local   "/usr/bin/dumb-init …"   airflow-webserver   11 days ago   Up 23 hours (healthy)   127.0.0.1:8080->8080/tcp
+kenya-retail-school-kafka-1               apache/kafka:4.0.0           "/__cacert_entrypoin…"   kafka               11 days ago   Up 23 hours (healthy)   127.0.0.1:29092->29092/tcp

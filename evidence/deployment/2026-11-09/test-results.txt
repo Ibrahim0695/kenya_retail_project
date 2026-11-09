@@ -1,0 +1,7 @@
+Command:
+.\.venv\Scripts\python.exe -m unittest discover tests
+
+Result:
+Ran 12 tests in 100.042s
+
+OK

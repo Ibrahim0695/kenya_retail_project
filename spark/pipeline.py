@@ -441,7 +441,10 @@ def run_pipeline() -> None:
 
     hadoop_home = _configure_windows_hadoop()
     spark = (
-        SparkSession.builder.appName("KenyaRetailMedallionPipeline")
+        SparkSession.builder.master("local[1]")
+        .appName("KenyaRetailMedallionPipeline")
+        .config("spark.driver.memory", "512m")
+        .config("spark.sql.shuffle.partitions", "4")
         .config("spark.sql.session.timeZone", "Africa/Nairobi")
     )
     if hadoop_home is not None:
